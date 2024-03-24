@@ -1,5 +1,12 @@
 import Todo from "./components/todo";
 import "./App.css";
+import Navbar from "./pages/Navbar";
+import AboutUs from "./pages/AboutUs";
+import Home from "./pages/Home";
+import Career from "./pages/Career";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+//Switch = Routes
 
 function App() {
   const todos = [
@@ -16,12 +23,23 @@ function App() {
   ];
 
   return (
-    <div className="App">
-      <h1>_dev branch_</h1>
-      {todos.map((todo) => {
-        return <Todo todo={todo} />;
-      })}
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/aboutus" element={<AboutUs />}></Route>
+          <Route path="/career" element={<Career />}></Route>
+        </Routes>
+      </div>
+      <div className="test__data">
+        <h1>_dev branch_</h1>
+        <h2>Test Data:</h2>
+        {todos.map((todo) => {
+          return <Todo todo={todo} />;
+        })}
+      </div>
+    </Router>
   );
 }
 

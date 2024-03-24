@@ -27,7 +27,19 @@
 .App-link {
   color: #61dafb;
 }
-
+.navbar {
+  display: flex;
+}
+.navbar__links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.test__data {
+  display: flex;
+  flex-direction: column;
+  background-color: #61dafb;
+  align-items: center;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
