@@ -4,7 +4,7 @@ import Navbar from "./pages/Navbar";
 import AboutUs from "./pages/AboutUs";
 import Home from "./pages/Home";
 import Career from "./pages/Career";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 //Switch = Routes
@@ -24,7 +24,7 @@ function App() {
   ];
 
   return (
-    <Router>
+    <HashRouter>
       <div className="App">
         <Navbar />
         <Routes>
@@ -40,7 +40,7 @@ function App() {
           return <Todo todo={todo} />;
         })}
       </div> */}
-    </Router>
+    </HashRouter>
   );
 }
 
