@@ -40,6 +40,23 @@
   background-color: #61dafb;
   align-items: center;
 }
+.section__mane {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 50vh;
+}
+.nav_link {
+  text-decoration: none;
+}
+.nav_link:link,
+.nav_link:visited {
+  color: black;
+}
+.nav_link:hover {
+  color: grey;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

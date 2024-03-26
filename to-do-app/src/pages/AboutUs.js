@@ -1,7 +1,7 @@
 const AboutUs = () => {
   return (
-    <div>
-      <h1>YOU ARE IN ABOUT US SECTION</h1>
+    <div className="section__mane">
+      <h1>&lt; YOU ARE IN ABOUT US SECTION &gt;</h1>
     </div>
   );
 };
