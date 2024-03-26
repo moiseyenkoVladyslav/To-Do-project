@@ -32,13 +32,13 @@ function App() {
           <Route path="/career" element={<Career />}></Route>
         </Routes>
       </div>
-      <div className="test__data">
+      {/* <div className="test__data">
         <h1>_dev branch_</h1>
         <h2>Test Data:</h2>
         {todos.map((todo) => {
           return <Todo todo={todo} />;
         })}
-      </div>
+      </div> */}
     </Router>
   );
 }
