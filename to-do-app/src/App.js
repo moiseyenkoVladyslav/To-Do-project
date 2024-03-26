@@ -27,9 +27,9 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/aboutus" element={<AboutUs />}></Route>
-          <Route path="/career" element={<Career />}></Route>
+          <Route path="To-Do-project/" element={<Home />}></Route>
+          <Route path="To-Do-project/aboutus" element={<AboutUs />}></Route>
+          <Route path="To-Do-project/career" element={<Career />}></Route>
         </Routes>
       </div>
       <div className="test__data">
