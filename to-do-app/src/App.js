@@ -4,7 +4,8 @@ import Navbar from "./pages/Navbar";
 import AboutUs from "./pages/AboutUs";
 import Home from "./pages/Home";
 import Career from "./pages/Career";
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 //Switch = Routes
@@ -33,13 +34,6 @@ function App() {
           <Route path="/career" element={<Career />}></Route>
         </Routes>
       </div>
-      {/* <div className="test__data">
-        <h1>_dev branch_</h1>
-        <h2>Test Data:</h2>
-        {todos.map((todo) => {
-          return <Todo todo={todo} />;
-        })}
-      </div> */}
     </HashRouter>
   );
 }
